@@ -18,8 +18,8 @@ mongoose.connection.on('err', (err) => {
     }
 });
 
-const port = 3000;
-
+//const port = 3000;
+const Port = process.env.PORT || 3000;
 app.use(cors());
 
 app.use(bodyparser.json());
